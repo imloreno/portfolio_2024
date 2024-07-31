@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Reddit Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/RedditSans.woff") format("woff");
+}
+
+:root {
+
+  /* --- Default theme colors --- */
+  --color-primary: #c4b1ae;
+  --color-secondary: #6a66f2;
+  --color-tertiary: #dcd6f7;
+  --color-title: #fed766;
+  --color-text: #dcd6f7;
+  --color-text2: #262626;
+  --color-bg: #262626;
+  --color-bg2: #1c1c1c;
+  --color-bg3: #dcd6f7;
+
+  font-family: "Reddit Sans", sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg2);
+  color: var(--color-primary);
+}
+
+
+/* ---------------- ANIMATIONS ---------------- */
+
+@keyframes round {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
