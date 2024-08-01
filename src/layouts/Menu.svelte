@@ -16,10 +16,9 @@
       external: true,
     },
     {
-      name: "Email",
+      name: "work@imloreno.com",
       icon: IconType.mail,
       key: "mailto:work@imloreno.com",
-      external: true,
     },
     {
       name: "Resume",

@@ -47,7 +47,7 @@
             class="frame"
             points="84.66 138.69 32.72 138.69 30.36 134.3 87.02 134.3 84.66 138.69"
           /></g
-        ><g id="ailerons" data-name="ailerons" class="frame"
+        ><g id="ailerons" data-name="ailerons" class="background1"
           ><g id="ai3" class="smooth"
             ><polygon
               points="146.6 61.39 134.08 48.98 134.05 24.66 146.57 37.07 146.6 61.39"
@@ -107,16 +107,18 @@
 <style>
   /* ------------------------- SVG styles ------------------------- */
   .background1 {
-    fill: var(--color-bg3);
+    fill: var(--color-primary);
+    filter: drop-shadow(0 0 0.5rem var(--color-text2));
   }
   .background2 {
     fill: var(--color-bg2);
   }
   .frame {
-    fill: var(--color-primary);
+    fill: var(--color-bg);
+    filter: drop-shadow(0 0 0.2rem var(--color-text2));
   }
   .button {
-    fill: var(--color-secondary);
+    fill: var(--color-primary);
   }
 
   .smooth {
@@ -149,10 +151,10 @@
     display: flex;
     justify-content: center;
     column-gap: 0.5rem;
-    font-size: 1.3rem;
-    bottom: 3%;
-    right: 17%;
-    color: var(--color-text);
+    font-size: clamp(0.8rem, 1.3vw, 1.3rem);
+    bottom: calc(5% - 0.6vw);
+    right: calc(19% - 0.5vw);
+    color: var(--color-text2);
   }
 
   .container:hover .info-button-text {

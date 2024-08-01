@@ -22,17 +22,20 @@
 <style>
   .card-container {
     position: relative;
-    width: 30rem;
-    /* aspect-ratio: 96 / 117; */
+    max-width: 30rem;
+  }
+  .card-container:hover .profile-img {
+    filter: grayscale(1) contrast(1.7) sepia(0.6) saturate(0.5);
   }
   .profile-img {
+    margin: 0.5rem;
     position: absolute;
     width: 90%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 0.5rem;
     overflow: hidden;
-    z-index: -1;
+    transition: filter 0.5s;
   }
   .info {
     position: absolute;
@@ -47,6 +50,7 @@
     top: 14.5%;
     left: 25%;
     text-transform: uppercase;
+    font-size: clamp(0.5rem, 1.3vw, 1.3rem);
   }
   .info-company {
     position: absolute;
@@ -54,18 +58,22 @@
     left: 15%;
   }
   .info-company .company {
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
     text-transform: uppercase;
   }
   .info-company .type {
-    font-size: 1.5rem;
+    font-size: clamp(0.8rem, 1.3vw, 1.3rem);
+    margin-top: -2%;
     opacity: 0.6;
   }
   .info-timerange {
     position: absolute;
-    font-size: 1.3rem;
-    bottom: 4%;
-    left: 15%;
-    opacity: 0.7;
+    font-size: clamp(0.5rem, 1vw, 1rem);
+    padding: 0.3rem 0.5rem;
+    bottom: 4.5%;
+    left: 14%;
+    background-color: var(--color-text2);
+    box-shadow: 0 0.2rem 0.5rem var(--color-text2);
+    color: var(--color-text);
   }
 </style>

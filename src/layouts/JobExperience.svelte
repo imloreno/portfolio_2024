@@ -26,8 +26,10 @@
 
 <style>
   section {
-    margin: 15rem auto 0 auto;
+    padding-top: 15rem;
+    margin: 0 auto;
     max-width: 100rem;
+    background-color: var(--color-bg2);
   }
   .job-experience-container {
     display: grid;
