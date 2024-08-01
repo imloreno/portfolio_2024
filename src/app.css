@@ -1,9 +1,11 @@
-@font-face {
+/* @font-face {
   font-family: "Reddit Sans";
   font-style: normal;
   font-weight: 600;
   src: url("/RedditSans.woff") format("woff");
-}
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 
 :root {
   /* --- Default theme colors --- */
@@ -16,8 +18,13 @@
   --color-bg: #262626;
   --color-bg2: #1c1c1c;
   --color-bg3: #dcd6f7;
+  --color-success: #26c87a;
+  --color-warning: #dc4b7f;
 
   font-family: "Reddit Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 }
 
 * {
@@ -29,6 +36,52 @@
 body {
   background-color: var(--color-bg2);
   color: var(--color-primary);
+  font-size: 1.3rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-title {
+  color: var(--color-title);
+}
+
+.text-success {
+  color: var(--color-success);
+}
+
+.text-warning {
+  color: var(--color-warning);
 }
 
 /* ---------------- ANIMATIONS ---------------- */

@@ -5,5 +5,9 @@ export enum IconType {
    download,
    arrowDown,
    bug,
-   history
+   history,
+   projects,
+   external,
+   mail,
+   sheet
 }

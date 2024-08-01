@@ -10,11 +10,13 @@
   </div>
   <div class="text">
     <p class="text-paragraph">
-      💻 I'm a software engineer skilled in frontend development with React.js
-      with TypeScript and all ecosystem around them. Also, backend solutions
-      using Spring Boot with microservices. Focusing on delivering seamless user
-      experiences and scalable systems, I thrive on crafting impactful software
-      solutions 🚀.
+      💻 I'm a <span class="text-success">software engineer</span> skilled in
+      frontend development with
+      <span class="text-secondary">React.js with TypeScript</span> and the
+      ecosystem around it. Also, backend solutions using Spring Boot with
+      microservices. Focusing on delivering seamless user experiences and
+      <span class="text-warning">scalable systems</span>, I thrive on crafting
+      impactful software solutions 🚀.
     </p>
   </div>
 </div>
