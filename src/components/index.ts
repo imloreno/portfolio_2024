@@ -1,4 +1,6 @@
-import Profile from "./banner/Profile.svelte";
-import Icons from "./Icons.svelte";
+export { default as Profile } from "./banner/Profile.svelte";
 
-export { Profile, Icons };
+export { default as AboutMeContent } from "./aboutme/AboutMeContent.svelte";
+
+export { default as Icons } from "./Icons.svelte";
+export { default as Title } from "./Title.svelte";

@@ -1,0 +1,1 @@
+export { default as AboutMeContent } from './AboutMeContent.svelte';
