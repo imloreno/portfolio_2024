@@ -20,6 +20,12 @@
       "@entities/*": [
         "src/entities/*"
       ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
     }
   },
   "include": [

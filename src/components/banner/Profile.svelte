@@ -1,6 +1,6 @@
 <script>
-  import profileImg from "../assets/profile.png";
-  import roundTextImg from "../assets/round_text.svg";
+  import profileImg from "@assets/profile.png";
+  import roundTextImg from "@assets/round_text.svg";
 </script>
 
 <section class="container">

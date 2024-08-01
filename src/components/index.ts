@@ -1,3 +1,4 @@
-import Profile from "./Profile.svelte";
+import Profile from "./banner/Profile.svelte";
+import Icons from "./Icons.svelte";
 
-export { Profile };
+export { Profile, Icons };
