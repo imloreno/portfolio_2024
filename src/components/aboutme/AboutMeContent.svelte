@@ -12,11 +12,11 @@
     <p class="text-paragraph">
       💻 I'm a <span class="text-success">software engineer</span> skilled in
       frontend development with
-      <span class="text-secondary">React.js with TypeScript</span> and the
-      ecosystem around it. Also, backend solutions using Spring Boot with
-      microservices. Focusing on delivering seamless user experiences and
+      <span class="text-secondary">React.js, TypeScript</span> and the ecosystem
+      around it. Also, backend solutions using Spring Boot with microservices.
+      Focusing on delivering seamless user experiences and
       <span class="text-warning">scalable systems</span>, I thrive on crafting
-      impactful software solutions 🚀.
+      unique and impactful software solutions 🚀.
     </p>
   </div>
 </div>

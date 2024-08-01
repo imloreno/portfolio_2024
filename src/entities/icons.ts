@@ -9,5 +9,6 @@ export enum IconType {
    projects,
    external,
    mail,
-   sheet
+   sheet,
+   details
 }

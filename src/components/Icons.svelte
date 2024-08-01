@@ -1,6 +1,7 @@
 <script lang="ts">
   import { Icon } from "svelte-icons-pack";
   import { BsArrowDown, BsGithub, BsLinkedin } from "svelte-icons-pack/bs";
+  import { RiArrowsExpandDiagonalLine } from "svelte-icons-pack/ri";
   import {
     FaSolidDownload,
     FaSolidBugs,
@@ -38,6 +39,8 @@
   <Icon src={LuMailSearch} className={`${className} icon`} />
 {:else if type === IconType.sheet}
   <Icon src={FaSolidSheetPlastic} className={`${className} icon`} />
+{:else if type === IconType.details}
+  <Icon src={RiArrowsExpandDiagonalLine} className={`${className} icon`} />
 {:else}
   <Icon src={IoHome} className={`${className} icon`} />
 {/if}
