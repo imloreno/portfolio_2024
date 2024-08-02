@@ -3,7 +3,7 @@
   export let align = "right";
 </script>
 
-<div class={`text ${type} ${align}`} style="font-size: 4rem;">
+<div class={`text ${type} ${align}`}>
   <slot />
 </div>
 
@@ -12,6 +12,7 @@
     padding: 0.5rem 2rem;
     color: var(--color-text);
     white-space: nowrap;
+    font-size: clamp(1.5rem, 3vw, 4rem);
   }
   .text.right {
     text-align: right;

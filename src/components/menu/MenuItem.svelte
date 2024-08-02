@@ -35,5 +35,6 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    font-size: clamp(0.9rem, 1.2vw, 1.3rem);
   }
 </style>
