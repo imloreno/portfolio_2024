@@ -6,6 +6,3 @@
 <Banner />
 <AboutMe />
 <JobExperience />
-
-<style>
-</style>
