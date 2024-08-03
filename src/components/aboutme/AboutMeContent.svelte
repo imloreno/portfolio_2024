@@ -1,14 +1,33 @@
-<script>
+<script lang="ts">
+  import { afterUpdate } from "svelte";
   import HandsImage from "@assets/about_hands.png";
   import HeadImage from "@assets/about_head.png";
+  import Scrollbar from "smooth-scrollbar";
+
+  export let ticking;
+  let parallaxElementContainer;
+  let parallaxPositionY = 0;
+
+  afterUpdate(() => {
+    if (ticking) return;
+    // Get the position of the element container
+    const rectY = parallaxElementContainer?.getBoundingClientRect().y;
+    parallaxPositionY = Math.abs(rectY);
+  });
 </script>
 
-<div class="container">
-  <div class="pictures">
+<div class="container" bind:this={parallaxElementContainer}>
+  <div
+    class="pictures"
+    style="transform: translateY(calc(23vw - {parallaxPositionY * 0.25}px))"
+  >
     <img class="head" src={HeadImage} alt="Lorenzo Arias - Portfolio" />
   </div>
   <div class="text">
-    <p class="text-paragraph">
+    <p
+      class="text-paragraph"
+      style="transform: translateY({parallaxPositionY * 0.2}px)"
+    >
       💻 I'm a <span class="text-success">software engineer</span> skilled in
       frontend development with
       <span class="text-secondary">React.js, TypeScript</span> and the ecosystem
@@ -70,7 +89,7 @@
   .pictures {
     position: relative;
     user-select: none;
-    transition: transform 0.3s;
+    transition: transform 0.2s;
   }
   .pictures .head {
     width: 20vw;
@@ -92,6 +111,7 @@
     max-width: 50rem;
     font-size: clamp(1rem, 2vw, 2rem);
     padding: 2rem;
+    transition: transform 0.3s;
   }
 
   /* ---------------- SVG Frames ---------------- */
