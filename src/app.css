@@ -18,6 +18,7 @@
   --color-bg: #262626;
   --color-bg2: #1c1c1c;
   --color-bg3: #dcd6f7;
+  --color-bg4: #fed766;
   --color-success: #26c87a;
   --color-warning: #dc4b7f;
 
@@ -100,5 +101,20 @@ a:hover {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes skillText {
+  0% {
+    transform: rotateX(0);
+  }
+  20% {
+    transform: rotateX(360deg);
+  }
+  80% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotateX(0);
   }
 }
