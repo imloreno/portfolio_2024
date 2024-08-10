@@ -1,15 +1,13 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { AboutMe, Banner, Menu, JobExperience } from "@layouts/index";
-  import Scrollbar from "smooth-scrollbar";
 
-  let scrollbarElement;
+  let scrollbarElement: HTMLElement;
   let ticking = false;
 
   // ---------------------- SCROLL SMOOTH ----------------------
   onMount(() => {
-    const scrollbar = Scrollbar.init(scrollbarElement, {});
-    scrollbar.addListener(() => {
+    scrollbarElement.addEventListener("scroll", () => {
       // ---------------------- TICKING ----------------------
       if (ticking) return;
       ticking = true;

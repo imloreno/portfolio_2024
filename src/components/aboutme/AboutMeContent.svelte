@@ -2,16 +2,15 @@
   import { afterUpdate } from "svelte";
   import HandsImage from "@assets/about_hands.png";
   import HeadImage from "@assets/about_head.png";
-  import Scrollbar from "smooth-scrollbar";
 
   export let ticking;
-  let parallaxElementContainer;
+  let parallaxElementContainer: HTMLElement;
   let parallaxPositionY = 0;
 
   afterUpdate(() => {
     if (ticking) return;
     // Get the position of the element container
-    const rectY = parallaxElementContainer?.getBoundingClientRect().y;
+    const rectY = parallaxElementContainer?.getBoundingClientRect().top;
     parallaxPositionY = Math.abs(rectY);
   });
 </script>

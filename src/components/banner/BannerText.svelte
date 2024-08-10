@@ -27,7 +27,7 @@
     } else {
       getEven = true;
     }
-  }, 2500);
+  }, 2300);
 </script>
 
 <div>

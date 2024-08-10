@@ -106,6 +106,13 @@
 
 <style>
   /* ------------------------- SVG styles ------------------------- */
+  .container:hover #ai1,
+  .container:hover #ai3,
+  .container:hover #button,
+  .container:hover #left_aleron {
+    animation: transform 0.2s !important;
+    transition: transform 0.2s;
+  }
   .background1 {
     fill: var(--color-primary);
     filter: drop-shadow(0 0 0.5rem var(--color-text2));
@@ -122,7 +129,8 @@
   }
 
   .smooth {
-    transition: transform 0.5s;
+    transition: transform 0.2s;
+    animation: transform 0.2s !important;
   }
 
   .container {
