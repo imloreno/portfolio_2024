@@ -26,7 +26,6 @@
     transform: translateX(-50%);
     padding: 0 2rem 1rem 2rem;
     font-size: 3rem;
-    cursor: pointer;
     transition: transform 0.3s;
   }
   .scroll-down .scroll-icon :global(.scroll-icon-svg) {

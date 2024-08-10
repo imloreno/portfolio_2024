@@ -135,7 +135,6 @@
 
   .container {
     position: relative;
-    cursor: pointer;
   }
 
   .container svg {

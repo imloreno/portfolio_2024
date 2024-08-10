@@ -25,7 +25,7 @@
     max-width: 30rem;
   }
   .card-container:hover .profile-img {
-    filter: grayscale(1) contrast(1.7) sepia(0.6) saturate(0.5);
+    transform: scale(1.02);
   }
   .profile-img {
     margin: 0.5rem;
@@ -35,7 +35,7 @@
     object-fit: cover;
     border-radius: 0.5rem;
     overflow: hidden;
-    transition: filter 0.5s;
+    transition: all 0.5s;
   }
   .info {
     position: absolute;
