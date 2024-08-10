@@ -3,16 +3,23 @@
 </script>
 
 <h2 class={className}>
-  <span>&lt;</span><slot /> <span>/&gt;</span>
+  <slot />
 </h2>
 
 <style>
   h2 {
+    position: relative;
     font-size: 2.3em;
     color: var(--color-title);
     text-align: center;
   }
-  span {
+
+  h2::before {
+    content: "<";
+    color: var(--color-text);
+  }
+  h2::after {
+    content: " />";
     color: var(--color-text);
   }
 </style>
