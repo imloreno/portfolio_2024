@@ -10,6 +10,16 @@
   import { PROJECTS_URL } from "src/constants/urls";
 
   let projectList: JobSummary[] = [];
+  let projectActive = "";
+
+  // Set active project
+  const onSetActiveProject = (event: CustomEvent<any>) => {
+    if (projectActive === event.detail.id) {
+      projectActive = "";
+      return;
+    }
+    projectActive = event.detail.id;
+  };
 
   onMount(async () => {
     fetch(PROJECTS_URL)
@@ -28,17 +38,18 @@
   <Title>Job Experience</Title>
   <div class="job-experience-container">
     {#each projectList as job (job.id)}
-      <div class="">
-        <CardBox {job} />
+      <div class={projectActive === job.id ? "card-box-container" : ""}>
+        <CardBox
+          {job}
+          on:setActiveProject={onSetActiveProject}
+          isActive={projectActive === job.id}
+        />
+        {#if projectActive === job.id}
+          <DetailsSection />
+          <GallerySection />
+        {/if}
       </div>
     {/each}
-    {#if projectList.length !== 0}
-      <div class="card-box-container">
-        <CardBox job={projectList[1]} />
-        <DetailsSection />
-        <GallerySection />
-      </div>
-    {/if}
   </div>
 </section>
 

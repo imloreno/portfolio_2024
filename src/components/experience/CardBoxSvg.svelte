@@ -1,9 +1,11 @@
 <script>
   import { Icons } from "@components/index";
   import { IconType } from "@entities/icons";
+
+  export let isActive = false;
 </script>
 
-<div class="container">
+<div class="container {isActive && 'active'}">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.3 185.86"
     ><g
       ><g id="main_card"
@@ -106,6 +108,10 @@
 
 <style>
   /* ------------------------- SVG styles ------------------------- */
+  .active #ai1,
+  .active #ai3,
+  .active #button,
+  .active #left_aleron,
   .container:hover #ai1,
   .container:hover #ai3,
   .container:hover #button,
@@ -141,15 +147,19 @@
     overflow: visible;
   }
 
+  .active #ai1,
   .container:hover #ai1 {
     transform: translateY(0.3rem);
   }
+  .active #ai3,
   .container:hover #ai3 {
     transform: translateY(-0.3rem);
   }
+  .active #button,
   .container:hover #button {
     transform: translate(0.1rem, 0.1rem);
   }
+  .active #left_aleron,
   .container:hover #left_aleron {
     transform: translateX(-0.15rem);
   }
@@ -164,6 +174,7 @@
     color: var(--color-text2);
   }
 
+  .active .info-button-text,
   .container:hover .info-button-text {
     transform: translate(0.2rem, 0.2rem);
   }
