@@ -1,21 +1,31 @@
 <script lang="ts">
+  import moment from "moment";
   import type { JobSummary } from "@entities/experience";
   import CardBoxSvg from "./CardBoxSvg.svelte";
+  import { PROJECT_PROFILE } from "src/constants/urls";
 
   export let job: JobSummary;
-  const { company, position, jobType, date, img } = job;
+  const { name, position, type, from, to, id } = job;
+
+  // Get date in format MM 22
+  const fromDate = moment.utc(from).format("MMM YY");
+  const toDate = moment.utc(to).format("MMM YY");
 </script>
 
 <article class="card-container">
-  <img class="profile-img" src={img} alt={company} />
+  <img
+    class="profile-img"
+    src={PROJECT_PROFILE.replace(":id", id)}
+    alt={name}
+  />
   <CardBoxSvg />
   <div class="info">
-    <p class="info-position">Frontend developer</p>
+    <p class="info-position">{position}</p>
     <div class="info-company">
-      <p class="company">Nice Actimize</p>
-      <p class="type">Full-time</p>
+      <p class="company">{name}</p>
+      <p class="type">{type}</p>
     </div>
-    <p class="info-timerange">Jun 22 to Jun 24</p>
+    <p class="info-timerange">{fromDate} to {toDate}</p>
   </div>
 </article>
 
@@ -58,7 +68,7 @@
     left: 15%;
   }
   .info-company .company {
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-size: clamp(1.5rem, 2.3vw, 2.3rem);
     text-transform: uppercase;
   }
   .info-company .type {
@@ -70,7 +80,7 @@
     position: absolute;
     font-size: clamp(0.5rem, 1vw, 1rem);
     padding: 0.3rem 0.5rem;
-    bottom: 4.5%;
+    bottom: 5.1%;
     left: 14%;
     background-color: var(--color-text2);
     box-shadow: 0 0.2rem 0.5rem var(--color-text2);

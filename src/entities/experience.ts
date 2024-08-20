@@ -1,7 +1,9 @@
 export type JobSummary = {
-   company: string
+   id: string
+   name: string
    position: string
-   jobType: string
-   date: string
-   img: string
+   type: string
+   from: string
+   to: string
+   picture: string
 }

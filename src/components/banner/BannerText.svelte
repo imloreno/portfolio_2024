@@ -1,7 +1,7 @@
 <script lang="ts">
   import { SkillType, type Skill } from "@entities/banner";
   import { SkillText } from ".";
-  import { random, shuffle } from "lodash";
+  import { shuffle } from "lodash";
 
   export let align = "right";
   export let skills: Skill[];
@@ -18,7 +18,6 @@
         ...skill,
         type: even ? typesList[index] : SkillType.default,
         even: even,
-        delay: random(0, 1, true),
       };
     });
 
@@ -31,7 +30,7 @@
 </script>
 
 <div>
-  {#each skillsProcessed as { text, type, even, delay }}
-    <SkillText {type} {align} {even} {delay}>{text}</SkillText>
+  {#each skillsProcessed as { text, type, even }}
+    <SkillText {type} {align} {even}>{text}</SkillText>
   {/each}
 </div>

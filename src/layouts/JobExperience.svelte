@@ -1,26 +1,30 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import { CardBox, Title } from "@components/index";
   import type { JobSummary } from "@entities/experience";
+  import { PROJECTS_URL } from "src/constants/urls";
 
-  const job: JobSummary = {
-    company: "Nice Actimize",
-    position: "Frontend Developer",
-    jobType: "Full-time",
-    date: "Jun 22 to Jun 24",
-    img: "https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=1434/https://s3.cointelegraph.com/uploads/2023-04/fa3a91c9-1d0e-48aa-87e3-89b7e2600890.JPG",
-  };
+  let projectList: JobSummary[] = [];
+
+  onMount(async () => {
+    fetch(PROJECTS_URL)
+      .then((response) => response.json())
+      .then((data) => {
+        if (!data.data) return;
+        projectList = data.data;
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  });
 </script>
 
 <section>
   <Title>Job Experience</Title>
   <div class="job-experience-container">
-    <CardBox {job} />
-    <CardBox {job} />
-    <CardBox {job} />
-    <CardBox {job} />
-    <CardBox {job} />
-    <CardBox {job} />
-    <CardBox {job} />
+    {#each projectList as job (job.id)}
+      <CardBox {job} />
+    {/each}
   </div>
 </section>
 
