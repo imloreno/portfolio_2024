@@ -1,0 +1,40 @@
+<script lang="ts">
+  import { Icons } from "@components/index";
+  import { IconType } from "@entities/icons";
+  import { SKILL_LABELS } from "@entities/skills";
+
+  export let skillText = "";
+  export let type: string | IconType = IconType.home;
+</script>
+
+<div class="skill-stack">
+  <div class="icon">
+    <Icons {type} />
+  </div>
+  <p class="subtitle-stack">{SKILL_LABELS[skillText] || "None"}</p>
+</div>
+
+<style>
+  .skill-stack {
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    width: 13rem;
+    padding: 1rem;
+    column-gap: 1rem;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    border: solid 0.2rem var(--color-text);
+    border-radius: 0.5rem;
+  }
+
+  .skill-stack:hover {
+    transform: scale(1.05);
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+  }
+</style>

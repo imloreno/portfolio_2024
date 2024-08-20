@@ -1,6 +1,12 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { AboutMe, Banner, Menu, JobExperience } from "@layouts/index";
+  import {
+    AboutMe,
+    Banner,
+    Menu,
+    JobExperience,
+    SkillSet,
+  } from "@layouts/index";
 
   let scrollbarElement: HTMLElement;
   let ticking = false;
@@ -23,6 +29,7 @@
   <Banner />
   <AboutMe {ticking} />
   <JobExperience />
+  <SkillSet />
 </div>
 
 <style>
