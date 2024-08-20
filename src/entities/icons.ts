@@ -11,6 +11,7 @@ export enum IconType {
    mail,
    sheet,
    details,
+   security,
 
    AGILE = "AGILE",
    API_REST = "API_REST",

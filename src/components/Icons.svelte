@@ -6,6 +6,7 @@
     BsGit,
     BsGithub,
     BsLinkedin,
+    BsShieldLockFill,
   } from "svelte-icons-pack/bs";
   import {
     RiArrowsExpandDiagonalLine,
@@ -138,6 +139,8 @@
   <Icon src={BiLogoVisualStudio} className={`${className} icon`} />
 {:else if type === IconType.ZUSTAND}
   <Icon src={FaSolidStore} className={`${className} icon`} />
+{:else if type === IconType.security}
+  <Icon src={BsShieldLockFill} className={`${className} icon`} />
 {:else}
   <Icon src={IoHome} className={`${className} icon`} />
 {/if}

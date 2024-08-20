@@ -5,6 +5,8 @@ export { default as Profile } from "./banner/Profile.svelte";
 export { default as AboutMeContent } from "./aboutme/AboutMeContent.svelte";
 
 export { default as CardBox } from "./experience/CardBox.svelte";
+export { default as DetailsSection } from "./experience/DetailsSection.svelte";
+export { default as GallerySection } from "./experience/GallerySection.svelte";
 
 export { default as StackList } from "./skills/StackList.svelte";
 
