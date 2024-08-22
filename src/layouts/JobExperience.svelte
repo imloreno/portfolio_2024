@@ -62,9 +62,12 @@
   }
   .job-experience-container {
     display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    width: fit-content;
+    max-width: 90rem;
+    margin: auto;
     margin-top: 4rem;
+    gap: 2rem;
+    grid-template-columns: repeat(3, auto);
     padding: 2rem;
   }
 

@@ -168,7 +168,7 @@
     display: flex;
     justify-content: center;
     column-gap: 0.5rem;
-    font-size: clamp(0.8rem, 1.3vw, 1.3rem);
+    font-size: 1.1rem;
     bottom: calc(5% - 0.6vw);
     right: calc(19% - 0.5vw);
     color: var(--color-text2);

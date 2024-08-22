@@ -44,7 +44,7 @@
 <style>
   .card-container {
     position: relative;
-    max-width: 30rem;
+    width: 25rem;
   }
   .card-container:hover .profile-img,
   .active .profile-img {
@@ -70,30 +70,30 @@
   }
   .info-position {
     position: absolute;
-    top: 14.5%;
+    top: 4.4rem;
     left: 25%;
     text-transform: uppercase;
-    font-size: clamp(0.5rem, 1.3vw, 1.3rem);
+    font-size: 1.1rem;
   }
   .info-company {
     position: absolute;
-    top: 76%;
+    top: 24rem;
     left: 15%;
   }
   .info-company .company {
-    font-size: clamp(1.5rem, 2.3vw, 2.3rem);
+    font-size: 1.8rem;
     text-transform: uppercase;
   }
   .info-company .type {
-    font-size: clamp(0.8rem, 1.3vw, 1.3rem);
-    margin-top: -2%;
+    font-size: 1rem;
+    margin-top: -0.3rem;
     opacity: 0.6;
   }
   .info-timerange {
     position: absolute;
-    font-size: clamp(0.5rem, 1vw, 1rem);
+    font-size: 0.9rem;
     padding: 0.3rem 0.5rem;
-    bottom: 5.1%;
+    top: 27.6rem;
     left: 14%;
     background-color: var(--color-text2);
     box-shadow: 0 0.2rem 0.5rem var(--color-text2);
