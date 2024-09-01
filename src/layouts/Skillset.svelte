@@ -77,7 +77,9 @@
     align-items: center;
     justify-content: center;
     margin: 12rem auto;
-    max-width: 93rem;
+    max-width: 80rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .skills-container {

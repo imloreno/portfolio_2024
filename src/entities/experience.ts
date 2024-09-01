@@ -1,3 +1,5 @@
+import type { Skill } from "./skills"
+
 export type JobSummary = {
    id: string
    name: string
@@ -6,4 +8,11 @@ export type JobSummary = {
    from: string
    to: string
    picture: string
+   skills: Skill[]
+}
+
+export type JobDetails = {
+   description?: string
+   github?: string
+   link?: string
 }

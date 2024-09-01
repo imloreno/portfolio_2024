@@ -9,6 +9,8 @@ export { default as DetailsSection } from "./experience/DetailsSection.svelte";
 export { default as GallerySection } from "./experience/GallerySection.svelte";
 
 export { default as StackList } from "./skills/StackList.svelte";
+export { default as SkillText } from "./skills/SkillText.svelte";
 
 export { default as Icons } from "./Icons.svelte";
 export { default as Title } from "./Title.svelte";
+export { default as Button } from "./Button.svelte";

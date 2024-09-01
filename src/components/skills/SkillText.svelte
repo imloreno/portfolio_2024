@@ -3,11 +3,14 @@
   import { IconType } from "@entities/icons";
   import { SKILL_LABELS } from "@entities/skills";
 
+  type Size = "default" | "small";
+
   export let skillText = "";
   export let type: string | IconType = IconType.home;
+  export let size: Size = "default";
 </script>
 
-<div class="skill-stack">
+<div class="skill-stack {size}">
   <div class="icon">
     <Icons {type} />
   </div>
@@ -36,5 +39,20 @@
     display: flex;
     align-items: center;
     font-size: 2rem;
+  }
+
+  /* ----------------- VARIANTS ----------------- */
+  .small {
+    column-gap: 0.7rem;
+    height: 2.9rem;
+    width: fit-content;
+    font-size: 1rem;
+    justify-content: start;
+  }
+  .small .icon {
+    font-size: 1.3rem;
+  }
+  .small .subtitle-stack {
+    font-size: 1rem;
   }
 </style>

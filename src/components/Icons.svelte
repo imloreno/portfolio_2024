@@ -24,6 +24,7 @@
     FaSolidStore,
   } from "svelte-icons-pack/fa";
   import {
+    IoClose,
     IoHome,
     IoLogoBitbucket,
     IoLogoJavascript,
@@ -40,7 +41,10 @@
   import { SiAdobeillustrator } from "svelte-icons-pack/si";
   import { SiJirasoftware } from "svelte-icons-pack/si";
   import { SiMongodb } from "svelte-icons-pack/si";
-  import { TrOutlineBrandMysql } from "svelte-icons-pack/tr";
+  import {
+    TrOutlineBrandMysql,
+    TrOutlineWorldShare,
+  } from "svelte-icons-pack/tr";
   import { SiAdobephotoshop } from "svelte-icons-pack/si";
   import { SiPhp } from "svelte-icons-pack/si";
   import { BiLogoPostgresql } from "svelte-icons-pack/bi";
@@ -141,6 +145,10 @@
   <Icon src={FaSolidStore} className={`${className} icon`} />
 {:else if type === IconType.security}
   <Icon src={BsShieldLockFill} className={`${className} icon`} />
+{:else if type === IconType.close}
+  <Icon src={IoClose} className={`${className} icon`} />
+{:else if type === IconType.world}
+  <Icon src={TrOutlineWorldShare} className={`${className} icon`} />
 {:else}
   <Icon src={IoHome} className={`${className} icon`} />
 {/if}

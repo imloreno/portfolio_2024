@@ -12,6 +12,8 @@ export enum IconType {
    sheet,
    details,
    security,
+   world,
+   close,
 
    AGILE = "AGILE",
    API_REST = "API_REST",

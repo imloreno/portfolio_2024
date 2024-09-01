@@ -45,7 +45,10 @@
           isActive={projectActive === job.id}
         />
         {#if projectActive === job.id}
-          <DetailsSection />
+          <DetailsSection
+            projectInfo={job}
+            on:setActiveProject={onSetActiveProject}
+          />
           <GallerySection />
         {/if}
       </div>
