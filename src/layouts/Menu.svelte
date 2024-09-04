@@ -23,7 +23,7 @@
     {
       name: "Resume",
       icon: IconType.sheet,
-      key: "/resume",
+      key: "https://github.com/imloreno/imloreno/raw/main/Resume.docx",
       className: "mx-auto",
       download: true,
     },
