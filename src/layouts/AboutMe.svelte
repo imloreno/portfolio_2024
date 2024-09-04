@@ -4,13 +4,13 @@
   export let ticking;
 </script>
 
-<section>
+<section id="about-me">
   <Title>About Me</Title>
   <AboutMeContent {ticking} />
 </section>
 
 <style>
   section {
-    margin-top: 12rem;
+    padding-top: 12rem;
   }
 </style>

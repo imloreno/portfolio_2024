@@ -34,7 +34,7 @@
   });
 </script>
 
-<section>
+<section id="job-experience">
   <Title>Job Experience</Title>
   <div class="job-experience-container">
     {#each projectList as job (job.id)}

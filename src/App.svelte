@@ -6,6 +6,7 @@
     Menu,
     JobExperience,
     SkillSet,
+    Footer,
   } from "@layouts/index";
 
   let scrollbarElement: HTMLElement;
@@ -25,11 +26,14 @@
 </script>
 
 <div id="scrollbar" bind:this={scrollbarElement}>
+  <!-- Just to scroll here when user clicks on home icon -->
+  <div id="home" />
   <Menu />
   <Banner />
   <AboutMe {ticking} />
   <JobExperience />
   <SkillSet />
+  <Footer />
 </div>
 
 <style>
@@ -37,5 +41,6 @@
     width: 100vw;
     height: 100vh;
     overflow: auto;
+    scroll-behavior: smooth;
   }
 </style>

@@ -5,9 +5,9 @@
 </script>
 
 <div class="scroll-down {className}">
-  <div class="scroll-icon">
+  <a href="/#about-me" class="scroll-icon">
     <Icons className="scroll-icon-svg" type={IconType.arrowDown} />
-  </div>
+  </a>
   <svg viewBox="0 0 1440 148" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0L685 148L1054 109.795L1440 0H0Z" />
   </svg>

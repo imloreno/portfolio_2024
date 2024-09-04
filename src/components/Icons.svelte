@@ -7,6 +7,7 @@
     BsGithub,
     BsLinkedin,
     BsShieldLockFill,
+    BsUiChecks,
   } from "svelte-icons-pack/bs";
   import {
     RiArrowsExpandDiagonalLine,
@@ -149,6 +150,8 @@
   <Icon src={IoClose} className={`${className} icon`} />
 {:else if type === IconType.world}
   <Icon src={TrOutlineWorldShare} className={`${className} icon`} />
+{:else if type === IconType.skills}
+  <Icon src={BsUiChecks} className={`${className} icon`} />
 {:else}
   <Icon src={IoHome} className={`${className} icon`} />
 {/if}

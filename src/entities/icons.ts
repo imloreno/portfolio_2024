@@ -14,6 +14,7 @@ export enum IconType {
    security,
    world,
    close,
+   skills,
 
    AGILE = "AGILE",
    API_REST = "API_REST",

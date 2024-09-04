@@ -47,7 +47,7 @@
   $: skillsProcessed = skillsProcessor(skillList);
 </script>
 
-<section>
+<section id="skills">
   <Title>Skill Set</Title>
   <div class="skills-container">
     {#if Object.keys(skillsProcessed).length !== 0}
@@ -76,10 +76,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 12rem auto;
+    margin: 0 auto;
+    padding: 12rem 2rem;
     max-width: 80rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .skills-container {

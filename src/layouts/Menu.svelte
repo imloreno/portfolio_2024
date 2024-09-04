@@ -27,14 +27,18 @@
       className: "mx-auto",
       download: true,
     },
-    { name: "Home", icon: IconType.home, key: "/home" },
-    { name: "About Me", icon: IconType.bug, key: "/about-me" },
+    { name: "Home", icon: IconType.home, key: "/#home" },
+    { name: "About Me", icon: IconType.bug, key: "/#about-me" },
     {
       name: "Job Experience",
       icon: IconType.history,
-      key: "/job-experience",
+      key: "/#job-experience",
     },
-    { name: "Projects", icon: IconType.projects, key: "/projects" },
+    {
+      name: "Skills",
+      icon: IconType.skills,
+      key: "/#skills",
+    },
   ];
 </script>
 
@@ -51,12 +55,17 @@
 </header>
 
 <style>
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
   header,
   nav {
     display: grid;
     place-items: center;
     background: var(--color-bg2);
-    height: 4rem;
+    height: 3.5rem;
     width: 100%;
   }
   ul {
