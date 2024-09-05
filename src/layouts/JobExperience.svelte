@@ -47,6 +47,7 @@
         {#if projectActive === job.id}
           <DetailsSection
             projectInfo={job}
+            isActive={projectActive === job.id}
             on:setActiveProject={onSetActiveProject}
           />
           <GallerySection />
@@ -81,5 +82,26 @@
     display: grid;
     gap: 3rem 2rem;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* ------------------------ RESPONSIVE DESIGN ------------------------ */
+  @media (max-width: 1350px) {
+    .job-experience-container {
+      grid-template-columns: repeat(2, auto);
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .card-box-container {
+      display: block;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      bottom: 0;
+      left: 0;
+      padding: 2rem;
+      background-color: var(--color-bg2);
+      z-index: 200;
+      overflow-y: auto;
+    }
   }
 </style>

@@ -182,4 +182,13 @@
   .details-icon :global(svg) {
     transform: translateY(0.2rem);
   }
+
+  /* --------------------------- RESPONSIVE WEB --------------------------------- */
+  @media (max-width: 950px) {
+    .info-button-text {
+      font-size: 1rem;
+      bottom: calc(4.7% - 0.6vw);
+      right: calc(16% - 0.5vw);
+    }
+  }
 </style>

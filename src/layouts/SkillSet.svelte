@@ -135,4 +135,24 @@
   .TOOLS-text {
     color: var(--color-text4);
   }
+
+  /* --------------------------- RESPONSIVE WEB --------------------------------- */
+  @media (max-width: 950px) {
+    section {
+      width: 100%;
+    }
+    .skills {
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .skills-section {
+      margin: 0;
+    }
+    .skills-container {
+      justify-content: start;
+    }
+    .skills-section {
+      height: auto;
+    }
+  }
 </style>

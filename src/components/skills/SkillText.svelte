@@ -45,7 +45,7 @@
   .small {
     column-gap: 0.7rem;
     height: 2.9rem;
-    width: fit-content;
+    width: fit-content !important;
     font-size: 1rem;
     justify-content: start;
   }
@@ -54,5 +54,17 @@
   }
   .small .subtitle-stack {
     font-size: 1rem;
+  }
+
+  /* --------------------------- RESPONSIVE WEB --------------------------------- */
+  @media (max-width: 950px) {
+    .skill-stack {
+      width: 11rem;
+      font-size: 1rem;
+      column-gap: 0.5rem;
+    }
+    .icon {
+      font-size: 1.5rem;
+    }
   }
 </style>

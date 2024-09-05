@@ -8,6 +8,7 @@
   import { IconType } from "@entities/icons";
 
   export let projectInfo: JobSummary;
+  export let isActive = false;
   let projectDetails: JobDetails = {};
   let description = ["Loading..."];
 
@@ -42,7 +43,7 @@
   }
 </script>
 
-<div class="container">
+<div class="container {isActive && 'active'}">
   <div class="content">
     <div class="header">
       <div class="title-section">
@@ -167,5 +168,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+  }
+
+  /* ------------------------ RESPONSIVE DESIGN ------------------------ */
+  @media (max-width: 1350px) {
+    .active {
+      margin-bottom: 2rem;
+    }
   }
 </style>

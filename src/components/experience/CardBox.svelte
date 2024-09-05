@@ -27,7 +27,7 @@
 <article class="card-container {isActive && 'active'}" on:click={dispatchEvent}>
   <img
     class="profile-img"
-    src={PROJECT_PROFILE.replace(":id", id)}
+    src={"https://media.gettyimages.com/id/184837627/photo/dark-towering-buildings.jpg?s=612x612&w=gi&k=20&c=oDJSPEEhW4n3TFqvev0TF6hkF633sN_9a-I5X-e4giU="}
     alt={name}
   />
   <CardBoxSvg {isActive} />
@@ -98,5 +98,40 @@
     background-color: var(--color-text2);
     box-shadow: 0 0.2rem 0.5rem var(--color-text2);
     color: var(--color-text);
+  }
+
+  /* --------------------------- RESPONSIVE WEB --------------------------------- */
+  @media (max-width: 950px) {
+    .card-container {
+      width: 20rem;
+    }
+
+    .info-position {
+      top: 3.5rem;
+      left: 22%;
+      font-size: 0.9rem;
+    }
+    .info-company {
+      top: 18.8rem;
+      left: 12%;
+    }
+    .info-company .company {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+    .info-company .type {
+      font-size: 0.9rem;
+      margin-top: -0.3rem;
+    }
+    .info-timerange {
+      font-size: 0.8rem;
+      padding: 0.3rem 0.4rem;
+      top: 22rem;
+      left: 12%;
+      box-shadow: 0 0.2rem 0.5rem var(--color-text2);
+    }
+    .active {
+      display: none;
+    }
   }
 </style>

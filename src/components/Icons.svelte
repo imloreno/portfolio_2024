@@ -44,6 +44,7 @@
   import { SiMongodb } from "svelte-icons-pack/si";
   import {
     TrOutlineBrandMysql,
+    TrOutlineMenu2,
     TrOutlineWorldShare,
   } from "svelte-icons-pack/tr";
   import { SiAdobephotoshop } from "svelte-icons-pack/si";
@@ -152,6 +153,8 @@
   <Icon src={TrOutlineWorldShare} className={`${className} icon`} />
 {:else if type === IconType.skills}
   <Icon src={BsUiChecks} className={`${className} icon`} />
+{:else if type === IconType.menu}
+  <Icon src={TrOutlineMenu2} className={`${className} icon`} />
 {:else}
   <Icon src={IoHome} className={`${className} icon`} />
 {/if}
