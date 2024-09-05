@@ -29,8 +29,18 @@
   }, 2300);
 </script>
 
-<div>
+<div class="skills-container">
   {#each skillsProcessed as { text, type, even }}
     <SkillText {type} {align} {even}>{text}</SkillText>
   {/each}
 </div>
+
+<style>
+  /* ----------------- RESPONSIVE DESIGN --------------------- */
+  @media (max-width: 750px) {
+    .skills-container {
+      opacity: 0.1;
+      padding-bottom: 5rem;
+    }
+  }
+</style>

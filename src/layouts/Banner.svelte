@@ -43,4 +43,15 @@
     row-gap: 3rem;
     grid-template-columns: 1fr 0.8fr 1fr;
   }
+
+  /* ----------------- RESPONSIVE DESIGN --------------------- */
+  @media (max-width: 750px) {
+    .banner {
+      position: relative;
+    }
+    .content {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 1rem;
+    }
+  }
 </style>

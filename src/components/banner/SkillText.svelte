@@ -26,7 +26,6 @@
 
   .even {
     color: var(--color-primary);
-    /* transition: all 0.2s; */
   }
   .strawberry {
     color: var(--color-text);
@@ -76,5 +75,22 @@
     animation: skillText calc(2.5s - 0.6s);
     animation-delay: 0.6s;
     transition-delay: 0.6s;
+  }
+
+  /* ----------------- RESPONSIVE DESIGN --------------------- */
+  @media (max-width: 750px) {
+    .text.right {
+      text-align: left;
+    }
+    .text.left {
+      text-align: right;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .text {
+      font-size: clamp(0.9rem, 4vw, 1.5rem);
+      padding: 0.5rem 1.5rem;
+    }
   }
 </style>

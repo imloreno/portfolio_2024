@@ -45,4 +45,15 @@
   .scroll-down svg path {
     fill: var(--color-bg);
   }
+
+  /* ----------------- RESPONSIVE DESIGN --------------------- */
+  @media (max-width: 750px) {
+    .scroll-down {
+      grid-column: span 2;
+    }
+    .scroll-down .scroll-icon {
+      font-size: 2rem;
+      margin-top: -2rem;
+    }
+  }
 </style>
