@@ -157,6 +157,27 @@
     }
     .skills-section {
       height: auto;
+      width: auto;
+    }
+  }
+
+  @media (max-width: 750px) {
+    .skills {
+      flex-direction: column;
+    }
+    .skills-section {
+      padding: 1rem;
+      border: thin solid var(--color-text);
+    }
+    .years-subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 550px) {
+    section {
+      padding: 8rem 1rem;
     }
   }
 </style>

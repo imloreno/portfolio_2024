@@ -19,4 +19,13 @@
     font-size: 2rem;
     text-align: unset;
   }
+
+  /* ------------------- RESPONSIVE -------------------- */
+  @media (max-width: 750px) {
+    .subtitle-stack {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  }
 </style>

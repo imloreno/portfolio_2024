@@ -67,4 +67,13 @@
       font-size: 1.5rem;
     }
   }
+
+  @media (max-width: 550px) {
+    .skill-stack {
+      width: fit-content;
+      border: thin solid var(--color-text);
+      height: fit-content;
+      padding: 0.5rem 1rem;
+    }
+  }
 </style>
