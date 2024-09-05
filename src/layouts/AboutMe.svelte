@@ -13,4 +13,10 @@
   section {
     padding-top: 12rem;
   }
+  /* ------------------------ RESPONSIVE DESIGN ------------------------ */
+  @media (max-width: 950px) {
+    section {
+      padding-top: 7rem;
+    }
+  }
 </style>

@@ -10,7 +10,7 @@
 <style>
   h2 {
     position: relative;
-    font-size: 2.3em;
+    font-size: clamp(2rem, 2vw, 2.5rem);
     color: var(--color-title);
     text-align: center;
   }

@@ -105,6 +105,7 @@
   .subtitle-stack {
     color: var(--color-title);
     margin-bottom: 1.5rem;
+    font-size: clamp(1.3rem, 2vw, 1.5rem);
   }
 
   .years-subtitle {
@@ -140,6 +141,7 @@
   @media (max-width: 950px) {
     section {
       width: 100%;
+      padding: 8rem 2rem;
     }
     .skills {
       gap: 1rem;
@@ -150,6 +152,8 @@
     }
     .skills-container {
       justify-content: start;
+      margin-top: 4rem;
+      gap: 3rem 2rem;
     }
     .skills-section {
       height: auto;

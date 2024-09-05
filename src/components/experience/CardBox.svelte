@@ -101,6 +101,12 @@
   }
 
   /* --------------------------- RESPONSIVE WEB --------------------------------- */
+  @media (max-width: 1350px) {
+    .active {
+      display: none;
+    }
+  }
+
   @media (max-width: 950px) {
     .card-container {
       width: 20rem;

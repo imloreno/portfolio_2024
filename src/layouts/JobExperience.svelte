@@ -104,4 +104,20 @@
       overflow-y: auto;
     }
   }
+
+  @media (max-width: 950px) {
+    section {
+      padding-top: 7rem;
+    }
+  }
+
+  @media (max-width: 750px) {
+    .job-experience-container {
+      grid-template-columns: auto;
+      padding: 0;
+    }
+    .card-box-container {
+      padding: 0rem;
+    }
+  }
 </style>
