@@ -1,6 +1,7 @@
 <script lang="ts">
   import Icons from "@components/Icons.svelte";
   import { IconType } from "@entities/icons";
+  import { createEventDispatcher } from "svelte";
 
   export let name = "";
   export let external = false;
@@ -9,11 +10,19 @@
   export let icon: IconType;
   export let className = "";
   export let responsive = false;
+
+  // Create a dispatcher event
+  export const dispatch = createEventDispatcher();
+
+  // Dispatch the event
+  const handleClick = () => {
+    dispatch("closeMenu");
+  };
 </script>
 
 <li class={className}>
   {#if external}
-    <a href={key} class="item" target="_blank">
+    <a href={key} class="item" target="_blank" on:click={handleClick}>
       <Icons type={icon} />
       {name}
       <Icons
@@ -22,7 +31,7 @@
       />
     </a>
   {:else if download}
-    <a href={key} class="item">
+    <a href={key} class="item" on:click={handleClick}>
       <Icons type={icon} />
       {name}
       <Icons
@@ -31,7 +40,7 @@
       />
     </a>
   {:else}
-    <a href={key} class="item">
+    <a href={key} class="item" on:click={handleClick}>
       <Icons type={icon} />
       {name}
     </a>

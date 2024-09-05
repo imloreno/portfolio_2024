@@ -27,7 +27,7 @@
 <article class="card-container {isActive && 'active'}" on:click={dispatchEvent}>
   <img
     class="profile-img"
-    src={"https://media.gettyimages.com/id/184837627/photo/dark-towering-buildings.jpg?s=612x612&w=gi&k=20&c=oDJSPEEhW4n3TFqvev0TF6hkF633sN_9a-I5X-e4giU="}
+    src={PROJECT_PROFILE.replace(":id", id)}
     alt={name}
   />
   <CardBoxSvg {isActive} />

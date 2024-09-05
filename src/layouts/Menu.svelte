@@ -56,7 +56,7 @@
     </button>
     <ul class="menu-content {toggleMenu && 'active'}">
       {#each menu as menuItem (menuItem.key)}
-        <MenuItem {...menuItem} />
+        <MenuItem {...menuItem} on:closeMenu={toggleMenuHandler} />
       {/each}
     </ul>
   </nav>
