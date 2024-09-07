@@ -50,7 +50,7 @@
             isActive={projectActive === job.id}
             on:setActiveProject={onSetActiveProject}
           />
-          <GallerySection />
+          <GallerySection projectId={job.id} />
         {/if}
       </div>
     {/each}
