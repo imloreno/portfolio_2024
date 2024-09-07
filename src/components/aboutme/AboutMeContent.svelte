@@ -139,4 +139,28 @@
   .bottom-bar {
     fill: var(--color-primary);
   }
+
+  /* ---------------------- RESPONSIVE ----------------------- */
+  @media (max-width: 550px) {
+    .pictures .head {
+      width: 10rem;
+      top: -15vw;
+      transform: translateX(-50%);
+    }
+    .container .about-top-bar .hands {
+      width: 15rem;
+      top: 1vw;
+      right: 50%;
+      transform: translateX(-50%);
+      transform: rotate(2deg);
+    }
+    .container {
+      grid-template-columns: 1fr;
+      height: clamp(25rem, 30vw, 55rem);
+    }
+    .text-paragraph {
+      padding: 2rem 2rem 5rem 2rem;
+      text-align: center;
+    }
+  }
 </style>

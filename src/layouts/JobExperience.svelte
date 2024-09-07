@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import moment from "moment";
   import {
     CardBox,
     DetailsSection,
@@ -27,6 +28,10 @@
       .then((data) => {
         if (!data.data) return;
         projectList = data.data;
+        data.data.sort(
+          (data1: JobSummary, data2: JobSummary) =>
+            moment.utc(data2.from).unix() - moment.utc(data1.from).unix()
+        );
       })
       .catch((error) => {
         console.log(error);

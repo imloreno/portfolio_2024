@@ -163,10 +163,16 @@
   }
 
   /* ------------------------ RESPONSIVE ------------------------- */
+  @media (max-width: 750px) {
+    .container {
+      padding: 0;
+    }
+  }
   @media (max-width: 650px) {
     .gallery-container {
       flex-direction: column;
       width: 100%;
+      padding: 2rem 1rem;
     }
     .gallery-photo img {
       max-width: 100%;
