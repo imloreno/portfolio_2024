@@ -41,7 +41,9 @@ body {
   background-color: var(--color-bg2);
   color: var(--color-primary);
   font-size: 1.3rem;
-  cursor: url("./cursor.png") 16 16, auto;
+  cursor: url("https://raw.githubusercontent.com/imloreno/portfolio_2024/main/src/assets/cursor.png")
+      16 16,
+    auto;
 }
 
 li {
