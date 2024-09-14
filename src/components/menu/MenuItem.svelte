@@ -22,7 +22,13 @@
 
 <li class={className}>
   {#if external}
-    <a href={key} class="item" target="_blank" on:click={handleClick}>
+    <a
+      href={key}
+      class="item"
+      target="_blank"
+      on:click={handleClick}
+      rel="nofollow"
+    >
       <Icons type={icon} />
       {name}
       <Icons
