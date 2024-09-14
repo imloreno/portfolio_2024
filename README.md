@@ -21,7 +21,15 @@ To set up the project 🧱, please refer to the short guide before 📝
 
 ---
 
-1. #### Running install command
+1. ### Before doing anything, we have to define PROD_ENV with the domain URL just like
+
+   ```bash
+
+   PROD_ENV=https://service.imloreno.com
+
+   ```
+
+2. #### Running install command
 
    ```console
 
@@ -29,7 +37,7 @@ To set up the project 🧱, please refer to the short guide before 📝
 
    ```
 
-2. #### Building project
+3. #### Building project
 
    ```console
 
