@@ -2,23 +2,24 @@
   import type { Skill } from "@entities/banner";
   import { Profile } from "@components/index";
   import { BannerText, ScrollDown } from "../components/banner";
+  import { SkillType } from "@entities/banner";
 
   const skills: { [key: string]: Skill[] } = {
     left: [
-      { text: "HTML - CSS", type: "brown" },
-      { text: "TYPESCRIPT", type: "default" },
-      { text: "REACT.JS", type: "cream" },
-      { text: "JAVASCRIPT", type: "default" },
-      { text: "REDUX & ZUSTAND", type: "brown" },
-      { text: "RESPONSIVE", type: "chocolate" },
+      { text: "HTML - CSS", type: SkillType.default, even: true },
+      { text: "TYPESCRIPT", type: SkillType.default, even: false },
+      { text: "REACT.JS", type: SkillType.strawberry, even: true },
+      { text: "JAVASCRIPT", type: SkillType.default, even: false },
+      { text: "REDUX & ZUSTAND", type: SkillType.grapes, even: true },
+      { text: "RESPONSIVE", type: SkillType.default, even: false },
     ],
     right: [
-      { text: "JAVA", type: "cream" },
-      { text: "SPRING BOOT", type: "brown" },
-      { text: "API REST", type: "chocolate" },
-      { text: "POSTGRESQL", type: "default" },
-      { text: "MONGODB", type: "milk" },
-      { text: "MICROSERVICES", type: "brown" },
+      { text: "JAVA", type: SkillType.default, even: false },
+      { text: "SPRING BOOT", type: SkillType.cream, even: true },
+      { text: "API REST", type: SkillType.default, even: false },
+      { text: "POSTGRESQL", type: SkillType.default, even: true },
+      { text: "MONGODB", type: SkillType.default, even: false },
+      { text: "MICROSERVICES", type: SkillType.milk, even: true },
     ],
   };
 </script>
@@ -41,5 +42,16 @@
     display: grid;
     row-gap: 3rem;
     grid-template-columns: 1fr 0.8fr 1fr;
+  }
+
+  /* ----------------- RESPONSIVE DESIGN --------------------- */
+  @media (max-width: 750px) {
+    .banner {
+      position: relative;
+    }
+    .content {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 1rem;
+    }
   }
 </style>

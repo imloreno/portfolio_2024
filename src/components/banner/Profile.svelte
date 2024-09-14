@@ -66,5 +66,27 @@
     font-size: 2vw;
   }
 
-  /* -------------- Animations -------------- */
+  /* -------------- RESPONSIVE DESIGN -------------- */
+  @media (max-width: 750px) {
+    .container {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      filter: drop-shadow(0 0 0.5rem black);
+      z-index: 1;
+    }
+    .profile-container {
+      width: 150px;
+      height: 150px;
+    }
+    .title h1 {
+      font-size: 1.2rem;
+    }
+
+    .title h2 {
+      color: var(--color-text);
+      font-size: 1rem;
+    }
+  }
 </style>

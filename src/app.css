@@ -1,9 +1,11 @@
-@font-face {
+/* @font-face {
   font-family: "Reddit Sans";
   font-style: normal;
   font-weight: 600;
   src: url("/RedditSans.woff") format("woff");
-}
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 
 :root {
   /* --- Default theme colors --- */
@@ -13,11 +15,20 @@
   --color-title: #fed766;
   --color-text: #dcd6f7;
   --color-text2: #262626;
+  --color-text3: #e26350;
+  --color-text4: #50d8e2;
+  --color-text5: #81b471;
   --color-bg: #262626;
   --color-bg2: #1c1c1c;
   --color-bg3: #dcd6f7;
+  --color-bg4: #fed766;
+  --color-success: #26c87a;
+  --color-warning: #dc4b7f;
 
   font-family: "Reddit Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 }
 
 * {
@@ -29,6 +40,52 @@
 body {
   background-color: var(--color-bg2);
   color: var(--color-primary);
+  font-size: 1.3rem;
+  cursor: url("./cursor.png") 16 16, auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  all: unset;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-title {
+  color: var(--color-title);
+}
+
+.text-success {
+  color: var(--color-success);
+}
+
+.text-warning {
+  color: var(--color-warning);
 }
 
 /* ---------------- ANIMATIONS ---------------- */
@@ -47,5 +104,20 @@ body {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes skillText {
+  0% {
+    transform: rotateX(0);
+  }
+  20% {
+    transform: rotateX(360deg);
+  }
+  80% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotateX(0);
   }
 }

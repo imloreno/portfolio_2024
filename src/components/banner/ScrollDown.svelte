@@ -5,9 +5,9 @@
 </script>
 
 <div class="scroll-down {className}">
-  <div class="scroll-icon">
+  <a href="/#about-me" class="scroll-icon">
     <Icons className="scroll-icon-svg" type={IconType.arrowDown} />
-  </div>
+  </a>
   <svg viewBox="0 0 1440 148" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0L685 148L1054 109.795L1440 0H0Z" />
   </svg>
@@ -26,7 +26,6 @@
     transform: translateX(-50%);
     padding: 0 2rem 1rem 2rem;
     font-size: 3rem;
-    cursor: pointer;
     transition: transform 0.3s;
   }
   .scroll-down .scroll-icon :global(.scroll-icon-svg) {
@@ -45,5 +44,16 @@
   }
   .scroll-down svg path {
     fill: var(--color-bg);
+  }
+
+  /* ----------------- RESPONSIVE DESIGN --------------------- */
+  @media (max-width: 750px) {
+    .scroll-down {
+      grid-column: span 2;
+    }
+    .scroll-down .scroll-icon {
+      font-size: 2rem;
+      margin-top: -2rem;
+    }
   }
 </style>
