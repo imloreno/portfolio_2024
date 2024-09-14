@@ -25,7 +25,7 @@ To set up the project 🧱, please refer to the short guide before 📝
 
    ```console
 
-   	pnpm install
+   pnpm install
 
    ```
 
@@ -33,7 +33,7 @@ To set up the project 🧱, please refer to the short guide before 📝
 
    ```console
 
-   	pnpm build
+   pnpm build
 
    ```
 
