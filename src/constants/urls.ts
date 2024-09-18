@@ -1,7 +1,7 @@
 // Base url for the service
 export const ID_KEY = ':id';
 export const NAME_KEY = ':name';
-export const SERVICE_URL = import.meta.env.PROD_ENV || 'http://localhost:8000';
+export const SERVICE_URL = import.meta.env.VITE_PROD_ENV || 'http://localhost:8000';
 export const PROJECTS_URL = `${SERVICE_URL}/api/v1/projects`;
 export const FILES_URL = `${SERVICE_URL}/api/v1/file`;
 
