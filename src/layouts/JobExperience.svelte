@@ -101,7 +101,7 @@
       position: fixed;
       width: 100vw;
       height: 100vh;
-      bottom: 0;
+      top: 0;
       left: 0;
       padding: 2rem;
       background-color: var(--color-bg2);
